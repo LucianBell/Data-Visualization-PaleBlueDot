@@ -1,11 +1,14 @@
 import pandas as pd
 import numpy as np
+import os
 
-class DataInmet:
-    def __init__(self, path):
-        self.path = path
+this_path = os.path.dirname(__file__)
+
+class InmetData:
+    def __init__(self):
+        self.input_path = os.path.join(this_path, "../../../data/raw/csv/Dados_INMET/dados_B803_D_2023-01-01_2023-12-31.csv")
         self.columns = ['Data Medicao', 'PRECIPITACAO TOTAL, DIARIO (AUT)(mm)', 'PRESSAO ATMOSFERICA MEDIA DIARIA (AUT)(mB)', 'TEMPERATURA MAXIMA, DIARIA (AUT)(°C)','TEMPERATURA MEDIA, DIARIA (AUT)(°C)','TEMPERATURA MINIMA, DIARIA (AUT)(°C)','UMIDADE RELATIVA DO AR, MEDIA DIARIA (AUT)(%)','VENTO, VELOCIDADE MEDIA DIARIA (AUT)(m/s)']
-        self.dataframe = pd.read_csv(self.path, parse_dates=["Data Medicao"],sep=';', usecols=self.columns)
+        self.dataframe = pd.read_csv(self.input_path, parse_dates=["Data Medicao"],sep=';', usecols=self.columns)
 
     def show_datafrae(self):
         print(self.dataframe)
@@ -56,11 +59,12 @@ class DataInmet:
         self.new_dataframe = new_df
         print('Successfully created a new dataframe!')
 
-    def save_df(self, path):
+    def save_df(self):
+        output_path = os.path.join(this_path, "../../../data/processed/csv/INMET/teste.csv")
         # Check if the data was treated
         if hasattr(self, 'new_dataframe'):
-            self.new_dataframe.to_csv(path, index=False)
-            print(f'Successfully saved the new dataframe to {path} as CSV.')
+            self.new_dataframe.to_csv(output_path, index=False)
+            print(f'Successfully saved the new dataframe to {output_path} as CSV.')
         else:
             print('Error: No new dataframe found. Run create_new_df first.')
 

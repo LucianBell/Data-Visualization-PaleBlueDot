@@ -1,6 +1,16 @@
-from DataInmet import DataInmet
+from src.data.entities.AgriculturalProductionData import AgriculturalProductionData
+from src.data.entities.AgriculturalEstablishmentsData import AgriculturalEstablishmentsData
+from src.data.entities.InmetData import InmetData
 
-teste = DataInmet(path="/home/lucianbell/Documents/Projetos_Hackathons/PaleBlueDot_entry/pale_blue_dot_hackathon/data/raw/Dados_INMET/dados_B803_D_2023-01-01_2023-12-31.csv")
+# Creating INMET data and saving it
+inmet_data = InmetData()
+inmet_data.convert_df()
+inmet_data.save_df()
 
-teste.convert_df()
-teste.save_df(path="/home/lucianbell/Documents/Projetos_Hackathons/PaleBlueDot_entry/pale_blue_dot_hackathon/data/processed/INMET_Data/teste.csv")
+# Creating agricultural production data and saving it
+agricultural_production = AgriculturalProductionData()
+agricultural_production.save_df()
+
+# Creating agricultural establishments data and saving it
+agricultural_establishments = AgriculturalEstablishmentsData()
+agricultural_establishments.save_df()
