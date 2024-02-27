@@ -1,4 +1,4 @@
-pale_blue_dot_hackathon
+![Header image for Pale Blue Dot Hackathon](/header_image.jpg)
 ==============================
 
 Data visualization to optimize governamental programs
