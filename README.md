@@ -1,7 +1,13 @@
 ![Header image for Pale Blue Dot Hackathon](/header_image.jpg)
 ==============================
 
-Data visualization to optimize governamental programs
+## What is the Pale Blue Dot Visualization Challenge
+
+This challenge was designed to engage data science learners and practitioners in using data to understand and improve quality of life on Earth through analysis and visualization. As detailed below, in this challenge, quality of life on Earth is captured by the Sustainable Development Goals and the data used to understand and track progress towards those goals will be publicly available U.S. Earth observation data.
+
+## What is this project/entry?
+
+Data visualization to optimize governmental programs
 
 ## How to run the project?
 
