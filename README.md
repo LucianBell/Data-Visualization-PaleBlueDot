@@ -7,7 +7,16 @@ This challenge was designed to engage data science learners and practitioners in
 
 ## What is this project/entry?
 
-Data visualization to optimize governmental programs
+Our project is a **visual that shows how climate and public policies affect agriculture in Brazil.** It uses data from **IBGE (Brazilian Institute of Geography and Statistics) and NASA Copernicus** to show **agricultural production, crop health, soil moisture, and temperature in each state of Brazil**. The visual also shows the domino effect of government interventions, which can benefit farmers and consumers by increasing crop resilience, reducing greenhouse gas emissions, and preventing environmental degradation. Our project is motivated by our personal experience with the benefits of PRONAF, a program that offers credit to family farmers.
+
+## Who is in this team?
+
+Short answer:  Amanda Soares, Lucian Bellini, Rian Fiore da Câmara, Thays Costa.
+Long answer: We are four people, from three different states, who share a common and challenging reality. We have seen first-hand the difficulties that local farmers face when the weather and other factors damage their crops. When our families go through these crises, they turn to PRONAF(National Program to Strengthen Family Farming), but sometimes it doesn't take into account the damage caused by drought in some regions. That's why we decided to give more power to the people who have been mitigating these problems and helping our families for years. We want to ensure that when the weather thwarts farmers' efforts, they receive the financial support they need.
+
+## What is our goal with this?
+
+The sustainable development goal we hope to promote is zero hunger, which aims to end hunger, achieve food security and improve nutrition, and promote sustainable agriculture. Our project also contributes to other goals, such as clean water and sanitation, and climate action.
 
 ## How to run the project?
 
